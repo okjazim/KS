@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Sambandh - Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .menu-icon {
+            position: absolute;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0;
+            border-radius: 4px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dashboard {
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .dashboard h2 {
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .dashboard p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .dashboard ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .dashboard li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Krishi Sambandh</h1>
+        <div class="dropdown menu-icon">
+            ☰
+            <div class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#project-info">Project Info</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard" id="home">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Your central hub for managing your farm operations efficiently.</p>
+        <ul>
+            <li><strong>Connect with Farmers:</strong> Network with local farmers and cooperatives.</li>
+            <li><strong>Marketplace Access:</strong> Buy and sell seeds, fertilizers, and tools.</li>
+            <li><strong>Job Board:</strong> Post or find seasonal job opportunities quickly.</li>
+            <li><strong>Community Forum:</strong> Share knowledge and tips with fellow farmers.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
